@@ -7,14 +7,14 @@ jobs:
     steps:
       - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
-          version: "290.0.1"
+          version: "306.0.0"
           service_account_key: ${{ secrets.GKE_SA_KEY }}
           project_id: ${{ secrets.GKE_PROJECT }}
       - run: |-
           gcloud --version
       - uses: GoogleCloudPlatform/github-actions/setup-gcloud@master
         with:
-          version: "306.0.0"
+          version: "290.0.1"
           service_account_key: ${{ secrets.GKE_SA_KEY }}
           project_id: ${{ secrets.GKE_PROJECT }}
       - run: |-
